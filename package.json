@@ -1,0 +1,38 @@
+{
+  "name": "rest-full-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node app.js",
+    "start-dev": "nodemon app.js",
+    "test": "mocha tests/**/*Tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "mocha": "^9.1.4",
+    "should": "^13.2.3",
+    "sinon": "^12.0.1",
+    "supertest": "^6.2.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
