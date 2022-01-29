@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use('/api', bookRouter);
 
 //GET handler - This is just a generic message
-app.get('/', (req, res)=> {
+app.get('/api/books', (req, res)=> {
     res.send('Welcome to my Nodemon API!');
 });
 
